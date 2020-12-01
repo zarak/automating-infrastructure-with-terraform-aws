@@ -8,7 +8,7 @@ locals {
 
 resource "aws_db_instance" "database" {
   allocated_storage = 10
-  engine = "postgresql"
+  engine = "postgres"
   engine_version = "9.6.19"
   instance_class = "db.t2.micro"
   identifier = "${var.namespace}-db-instance"
