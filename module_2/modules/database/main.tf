@@ -13,7 +13,7 @@ resource "aws_db_instance" "database" {
   instance_class = "db.t2.micro"
   identifier = "${var.namespace}-db-instance"
   name = "contacts"
-  username = "admin"
+  username = "db_admin"
   password = local.db_password
   skip_final_snapshot = true
   db_subnet_group_name = var.vpc.database_subnet_group
